@@ -1,0 +1,339 @@
+*, ::before, ::after{
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8BA1BB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* height: 100vh; */
+    
+}
+
+div.contenu {
+    background-color: rgb(150, 143, 143);
+    margin: 5% 5% 5% 5%;
+    padding: 0% 30px 30px 30px;
+    min-width: 350px;
+    /* box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1); */
+    overflow: visible;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+h1, H2 {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;
+}
+
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -17px;
+    padding: 8px 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*---------------------------- Tittre Block 1 ----------------------------*/
+
+p.titre_bloc1 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: -2px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.titre_bloc1{
+    margin-bottom: 0px;
+    margin-top: -3%;
+    margin-bottom: 5%;
+    overflow: visible;
+}
+/*---------------------------- Tittre Block 2 ----------------------------*/
+p.titre_maitrise {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.titre_maitrise{
+    margin-bottom: 0px;
+    margin-top: -3%;
+    margin-bottom: 5%;
+    overflow: visible;
+}
+
+p.titre_maitrise_2 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 25px;
+}
+p.titre_fin {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 25px;
+    overflow: visible;
+}
+
+.categorie {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+.titre_fin{
+    margin-bottom: 0px;
+    margin-top: -3%;
+    margin-bottom: 5%;
+    overflow: visible;
+}
+
+/*---------------------------- Box Block  ----------------------------*/
+.box{
+    border-radius: 10px;
+    display: inline-block;
+    height: 190%;
+    position: relative;
+    max-width: auto;
+}
+
+/*---------------------------- Contenue maitrise et contact  ----------------------------*/
+
+.tableau-style{
+    /* border-collapse: collapse; */
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    
+
+}
+
+/*---------------------------- Style titre Paragraphe  ----------------------------*/
+.numero {
+    background-color: #6C829D;
+    color: white;
+    width: 100px;
+    height: 130px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: -5px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    margin: 0;
+    
+    
+}
+/*---------------------------- Style Logo Paragraphe  ----------------------------*/
+.numero_2 {
+    background-color: #6C829D;
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: -10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+    margin-right: 10px; 
+    float: right;
+    /* visibility: hidden; */
+}
+
+/*---------------------------- Style texte paragraphe Block ----------------------------*/
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    /* padding-top: 3px; */
+    margin: 15px;
+}
+
+/*---------------------------- Style texte paragraphe texte centré à gauche ----------------------------*/
+.info_1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    padding-top: 10px;
+    margin-left: 14px;
+}
+/*---------------------------- Style texte paragraphe Block gras souligné ----------------------------*/
+.info_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    /* font-style: italic; */
+    padding-bottom: 3px;
+    margin: 15px;
+}
+
+
+/*---------------------------- Style titre tableau ----------------------------*/
+.titre_tableau{
+    background: #6C829D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    /* font-style: italic; */
+    padding: 1%;
+    border-radius: 30%;
+    margin-top: -10%;
+    
+}
+/*---------------------------- Style titre Hors Block ----------------------------*/
+.titre_parcour{
+    background: #6C829D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    /* font-style: italic; */
+    padding: 1%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    margin-top: -10%;
+    
+}
+
+/*---------------------------- 1er Block droit contact ----------------------------*/
+.bloc_contact{
+    width: 300px;
+    height: 300px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 70% 65%, 100% 87%, 51% 63%, 0 62%); */
+    border-radius: 10%; 
+    border: 10px solid black;
+    border-top: 15px;
+    border-left: 5px solid black;
+    margin: 1.4%;
+    position: relative;
+    left: 1%;
+    float: right;
+    overflow: visible;
+    box-shadow: 0 15px 50px rgba(150, 143, 143,1);
+
+}
+/*---------------------------- 1er Block gauche ----------------------------*/
+.bloc_gauche{
+    width: 300px;
+    height: 300px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 70% 65%, 100% 87%, 51% 63%, 0 62%); */
+    border-radius: 10%; 
+    border: 10px solid black;
+    border-top: 15px;
+    border-left: 5px solid black;
+    margin: 1.4%;
+    position: relative;
+    right: 1%;
+    float: left;
+    overflow: visible;
+    box-shadow: 0 15px 50px rgba(150, 143, 143,1);
+
+}
+
+/*---------------------------- 1er Block Milieu ----------------------------*/
+.photo_profile{
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+    clip-path: circle(50%);
+    background: orange;
+    background:url(profile.png);
+    background-size: cover;
+    background-position: 8px -3px;
+    margin: 1.4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    /* shape-outside: circle(); */
+    box-shadow: 0 15px 50px rgba(150, 143, 143,1);
+}
+/*---------------------------- Dernier Block Gauche ----------------------------*/
+.maitrise_1{
+    width: 350px;
+    height: 580px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 67%, 51% 67%, 0 97%, 31% 67%, 0 66%); */
+    border-radius: 10%; 
+    border: 10px solid black;
+    border-top: 15px;
+    border-right: 5px solid black;
+    margin: 1.4%;
+    position: relative;
+    right: 1%;
+    float: left;
+    overflow: visible;
+    box-shadow: 0 15px 50px rgb(150, 143, 143,1);
+}
+/*---------------------------- Dernier Block Droite ----------------------------*/
+.maitrise{
+    width: 350px;
+    height: 580px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 67%, 51% 67%, 0 97%, 31% 67%, 0 66%); */
+    border-radius: 10%; 
+    border: 10px solid black;
+    border-top: 15px;
+    border-right: 5px solid black;
+    margin: 1.4%;
+    position: relative;
+    left: 1%;
+    float: right;
+    overflow: visible;
+    box-shadow: 0 15px 50px rgb(150, 143, 143,1);
+}
+/*---------------------------- Dernier Block Milieu ----------------------------*/
+.qualite{
+    width: 300px;
+    height: 450px;
+    /* border-radius: 50%; */
+    border-radius: 10%; 
+    border: 10px solid black;
+    border-top: 15px;
+    border-right: 5px solid black;
+    margin: 6% 9% 2% 10%;
+    float: left;
+    margin: 1.4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    /* shape-outside: circle(); */
+    box-shadow: 0 15px 50px rgb(150, 143, 143,1);
+    overflow: visible;
+}
