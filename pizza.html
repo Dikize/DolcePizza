@@ -13,22 +13,27 @@
     <!-------------- Navbar -------------->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Dolce Pizza</a>
+            <!---- ---->
+            <a class="navbar-brand" href="#">Dolce Pizza</a>            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!---- ---->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills nav-fill">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills nav-fill ">
+
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Acceuil</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="commande.html">Commande</a>
                     </li>
+            
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Produits</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="topVente.html">TOP VENTE</a></li>
                             <li><a class="dropdown-item" href="pizza.html">PIZZA</a></li>
                             <li><a class="dropdown-item" href="burger.html">BURGER</a></li>
@@ -40,25 +45,20 @@
                             <li><a class="dropdown-item" href="glace.html">GLACES</a></li>
                         </ul>
                     </li>
+                 
                     <li class="nav-item">
-                        <a class="nav-link" href="connexion.html">S'identifier/S'INSCRIRE</a>
+                        <a class="nav-link" href="#">Panier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">S'identifier/S'INSCRIRE</a>
                     </li>
                 </ul>
 
-                <div class="btn-group dropstart">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu me-2">
-                        <li>
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Recherche">
-                        </li>
-                      <li><button class="btn btn-outline-success w-100" type="submit">Recherche</button></li>
-                    </ul>
-                </div>
-                
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            
             </div>
         </div>
     </nav>
@@ -66,7 +66,7 @@
     <!-----############# Offre promotionnel #############----->
     <div class="jumbotron mt-5">
         <div class="container">
-          <h1 class="display-3 text-center">Offre promotionnel</h1>
+          <h1 class="display-3 text-center">Offre pizza</h1>
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -128,7 +128,7 @@
     <div class="row row-cols-3 row-cols-md-3 g-4 m-2">
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -157,7 +157,7 @@
 
         
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -185,7 +185,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -213,7 +213,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -241,7 +241,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -269,7 +269,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -297,7 +297,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -325,7 +325,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -353,7 +353,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -381,7 +381,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -409,7 +409,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -437,7 +437,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-12 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
 			    <h5 class="card-title m-1">Pizza 4 Fromage</h5>

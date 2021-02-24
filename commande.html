@@ -28,7 +28,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Produits</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="topVente.html">TOP VENTE</a></li>
                             <li><a class="dropdown-item" href="pizza.html">PIZZA</a></li>
                             <li><a class="dropdown-item" href="burger.html">BURGER</a></li>
@@ -40,24 +40,19 @@
                             <li><a class="dropdown-item" href="glace.html">GLACES</a></li>
                         </ul>
                     </li>
+                 
                     <li class="nav-item">
-                        <a class="nav-link" href="connexion.html">S'identifier/S'INSCRIRE</a>
+                        <a class="nav-link" href="#">Panier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">S'identifier/S'INSCRIRE</a>
                     </li>
                 </ul>
 
-                <div class="btn-group dropstart">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu me-2">
-                        <li>
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Recherche">
-                        </li>
-                      <li><button class="btn btn-outline-success w-100" type="submit">Recherche</button></li>
-                    </ul>
-                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
                 
             </div>
         </div>
@@ -128,7 +123,7 @@
     <div class="row  m-2">
 
         <!-------------- TOP VENTE -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">TOP VENTE</a></div><!---- ---->
@@ -137,7 +132,7 @@
         </div>
 
         <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="pizza.html" class="btn">PIZZA</a></div><!---- ---->
@@ -146,7 +141,7 @@
         </div>
 
         <!-------------- Burger -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">BURGER</a></div><!---- ---->
@@ -156,7 +151,7 @@
 
         
         <!-------------- TEX-MEX -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">TEX-MEX</a></div><!---- ---->
@@ -166,7 +161,7 @@
 
         
         <!-------------- Salade -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">SALADE</a></div><!---- ---->
@@ -176,7 +171,7 @@
 
         
         <!-------------- DESSERTS -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">DESSERTS</a></div><!---- ---->
@@ -186,7 +181,7 @@
 
         
         <!-------------- BOISSON -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">BOISSON</a></div><!---- ---->
@@ -196,7 +191,7 @@
 
         
         <!-------------- GLACE -------------->
-        <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
             <div class="card m-0">
                 <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
                 <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">GLACES</a></div><!---- ---->
