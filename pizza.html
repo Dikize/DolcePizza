@@ -138,12 +138,12 @@
         </div>
     </section>
 
-    <!--------------################ (dernier Container ) ################-------------->
+    <!--------------################ (Container milieu) ################-------------->
     <section class="container-fluid mt-2">
         <div class="row">
 
             <!-------------- (Navbar Gauche) -------------->
-            <section class="container-fluid col-md-3 col-3 bg-secondary rounded-1 d-none d-sm-block">
+            <section class="container-fluid col-sm-3 bg-secondary rounded-1 d-none d-sm-block">
 
                 <nav class="navbar navbar-expand navbar-light">
                     <div class="container-fluid">
@@ -193,10 +193,43 @@
             </section>
 
             <!-------------- (Produit) -------------->
-            <section class="row col-md-6 col-12">
+            <section class="row col-12 col-sm-6">
                 
                 <!---- PIZZA ---->
-                <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                    <div class="card m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                        </svg>
+                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                        <h5 class="card-title m-1">Pizza 4 Fromage</h5>
+                        <div class="card-body p-0 m-1">
+                            <div class="dropdown d-flex justify-content-center">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Taille</a>
+                                <!-------------- Liste deroulante -------------->
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Junior</a></li>
+                                    <li><a class="dropdown-item" href="#">Senior</a></li>
+                                    <li><a class="dropdown-item" href="#">Mega</a></li>
+                                    <li><a class="dropdown-item" href="#">Personalise</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </div>
+    
+                    </div>
+                </div><!---- ---->
+                
+
+                <!---- PIZZA ---->
+                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
                     <div class="card m-0">
                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
                         <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -225,7 +258,7 @@
                 
 
                 <!---- PIZZA ---->
-                <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
                     <div class="card m-0">
                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
                         <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -254,36 +287,7 @@
                 
 
                 <!---- PIZZA ---->
-                <div class="card-group col-sm-6 col-6 text-center shadow p-1">
-                    <div class="card m-0">
-                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                        <h5 class="card-title m-1">Pizza 4 Fromage</h5>
-                        <div class="card-body p-0 m-1">
-                            <div class="dropdown d-flex justify-content-center">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Taille</a>
-                                <!-------------- Liste deroulante -------------->
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Junior</a></li>
-                                    <li><a class="dropdown-item" href="#">Senior</a></li>
-                                    <li><a class="dropdown-item" href="#">Mega</a></li>
-                                    <li><a class="dropdown-item" href="#">Personalise</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
-                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
-                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                            </svg>
-                        </div>
-    
-                    </div>
-                </div><!---- ---->
-                
-
-                <!---- PIZZA ---->
-                <div class="card-group col-sm-6 col-6 text-center shadow p-1">
+                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
                     <div class="card m-0">
                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
                         <h5 class="card-title m-1">Pizza 4 Fromage</h5>
@@ -317,7 +321,7 @@
                 
                 <!---- SVG panier ---->                
                 <div class="row  border-bottom border-dark">
-                    <div class="col-12 p-2 d-flex justify-content-center">
+                    <div class="col-12 p-1 d-flex justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="navbar-brand bi bi-cart4 d-flex align-self-baseline" viewBox="0 0 16 16">
                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                         </svg>
@@ -351,7 +355,18 @@
                         <p class="">Total TTC :</p>
                         <p class="">0.00 €</p>
                     </div>
-                
+
+                    <div class="col-12 border-top border-dark">
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="radio" name="radioLivraison" id="radioLivraison1" value="option1" aria-label="coche commande en Livraison">
+                            <label class="form-check-label" for="radioLivraison1">Livraison</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="radio" name="radioEmporte" id="radioEmporte1" value="option2" aria-label="coche commande à Emporte">
+                            <label class="form-check-label" for="radioEmporte1">Emporte</label>
+                        </div>
+                    </div>
+
                     <div class="btn bg-success p-2 fs-6">Valider la commande
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
                             <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
@@ -364,7 +379,104 @@
         </div>
     </section>
     
-    
+    <!--------------################ (dernier Container footer) ################-------------->
+    <section class="container-fluid">
+        <div class="row bg-secondary mt-1 rounded-1">
+            <div class="row col-12 p-1 ">
+
+                <!-- Horaire -->
+                <div class="col-4 d-none d-sm-block text-center">
+                    <p class="h2 text-decoration-underline">Horaires</p>
+                    <table class="table table-success table-striped rounded-1 shadow">
+                        <thead>
+                            <tr>
+                                <th scope="col">Jour</th>
+                                <th scope="col">Matin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Lundi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mardi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mercredi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jeudi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Vendredi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Samedi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dimanche</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- Horaire -->
+
+                <!-- A propos -->
+                    <div class="col-4 d-none d-sm-block text-center border border-dark">
+                        <p class="h2 text-decoration-underline">A propos</p>
+                    </div><!-- A propos -->
+
+                <!-- Contact -->
+                <div class="col-4 d-none d-sm-block">
+                    <div class="d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                        </svg>
+                        <p class="h2 mb-5 ms-5 text-decoration-underline">Contact</p>
+                    </div>
+
+                    <address class="d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <p class="fs-6 fs-md-3 ms-2">35 Rue Henri Barbusse, 93200 Saint Denis</p>
+                    </address>
+
+                    <div class="fs-6 fs-md-3 d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                        </svg>
+                        <p><a class="nav-link link-dark" href="mailto:Dolce@gmail.com?subject=Contact%20depuis%2020Dolce.com">Dolce@gmail.com</a></p>
+                    </div>
+
+                    <div class="fs-6 fs-md-3 d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <p><a class="nav-link link-dark" href="tel:+33987374144">09 87 37 41 44</a></p>
+                    </div>
+
+                    <div class="fs-6 fs-md-3 d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <p><a class="nav-link link-dark" href="https://fr-fr.facebook.com/">Facebook</a></p>
+                    </div>
+                </div><!-- Horaire -->
+
+            </div>
+
+        </div>
+    </section>
+
+
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>     
