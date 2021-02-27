@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap" rel="stylesheet">
 
 </head>
@@ -198,25 +199,124 @@
                 <!---- PIZZA ---->
                 <div class="card-group col-6 col-sm-4 text-center shadow p-1">
                     <div class="card m-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                        </svg>
+                        <div class="card-body p-0 m-1 info h-100 d-flex justify-content-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </div>
+                        <h5 class="card-title m-1 h3">4 Fromage</h5>
+
+                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                            <!-- svg Plus modal -->  
+                            <svg height="30pt" viewBox="0 0 512 512" width="30pt" xmlns="http://www.w3.org/2000/svg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog w-50">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ingredients suppl.</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <!-- Supplement -->
+                                            <div class="list-group text-center">
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Double Fromage 
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Base Sauce Barbecue
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    merguez
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Poivrons
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Viande hachée
+                                                </label>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Sauvegarde</button>
+                                            <button type="button" class="btn btn-primary">Plus de produits</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ferme</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- Modal -->
+                        <p class="h3-md">10 €</p>
+                        </div><!--  -->
+
+                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </div>
+    
+                    </div>
+                </div><!---- ---->
+                
+
+                <!---- PIZZA ---->
+                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                    <div class="card m-0">
                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
                         <h5 class="card-title m-1">Pizza 4 Fromage</h5>
-                        <div class="card-body p-0 m-1">
-                            <div class="dropdown d-flex justify-content-center">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Taille</a>
-                                <!-------------- Liste deroulante -------------->
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Junior</a></li>
-                                    <li><a class="dropdown-item" href="#">Senior</a></li>
-                                    <li><a class="dropdown-item" href="#">Mega</a></li>
-                                    <li><a class="dropdown-item" href="#">Personalise</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="card-body p-0 m-1 d-flex justify-content-around">
+                            <!-- svg Plus modal -->  
+                            <p class="h5">Perso</p>
+                            <svg height="30pt" viewBox="0 0 512 512" width="30pt" xmlns="http://www.w3.org/2000/svg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog w-50">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ingredients suppl.</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <!-- Supplement -->
+                                            <div class="list-group text-center">
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Double Fromage 
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Base Sauce Barbecue
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    merguez
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Poivrons
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Viande hachée
+                                                </label>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Sauvegarde</button>
+                                            <button type="button" class="btn btn-primary">Plus de produits</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ferme</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- Modal -->
+                        <p class="h5">10 €</p>
+                        </div><!--  -->
                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
                                 <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
@@ -263,46 +363,49 @@
                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
                         <h5 class="card-title m-1">Pizza 4 Fromage</h5>
                         <div class="card-body p-0 m-1">
-                            <div class="dropdown d-flex justify-content-center">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Taille</a>
-                                <!-------------- Liste deroulante -------------->
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Junior</a></li>
-                                    <li><a class="dropdown-item" href="#">Senior</a></li>
-                                    <li><a class="dropdown-item" href="#">Mega</a></li>
-                                    <li><a class="dropdown-item" href="#">Personalise</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
-                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
-                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                            </svg>
-                        </div>
-    
-                    </div>
-                </div><!---- ---->
-                
-
-                <!---- PIZZA ---->
-                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
-                    <div class="card m-0">
-                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                        <h5 class="card-title m-1">Pizza 4 Fromage</h5>
-                        <div class="card-body p-0 m-1">
-                            <div class="dropdown d-flex justify-content-center">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Taille</a>
-                                <!-------------- Liste deroulante -------------->
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Junior</a></li>
-                                    <li><a class="dropdown-item" href="#">Senior</a></li>
-                                    <li><a class="dropdown-item" href="#">Mega</a></li>
-                                    <li><a class="dropdown-item" href="#">Personalise</a></li>
-                                </ul>
-                            </div>
+                           
+                            <!-- svg Plus modal -->  
+                            <svg height="32pt" viewBox="0 0 512 512" width="32pt" xmlns="http://www.w3.org/2000/svg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog w-50">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Ingredients suppl.</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <!-- Supplement -->
+                                            <div class="list-group text-center">
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Double Fromage 
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Base Sauce Barbecue
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    merguez
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Poivrons
+                                                </label>
+                                                <label class="list-group-item">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Viande hachée
+                                                </label>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- Modal -->
                         </div>
                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
@@ -382,7 +485,7 @@
     <!--------------################ (dernier Container footer) ################-------------->
     <section class="container-fluid">
         <div class="row bg-secondary mt-1 rounded-1">
-            <div class="row col-12 p-1 ">
+            <div class="row col-12 p-1 m-0">
 
                 <!-- Horaire -->
                 <div class="col-4 d-none d-sm-block text-center">
@@ -430,6 +533,30 @@
                 <!-- A propos -->
                     <div class="col-4 d-none d-sm-block text-center border border-dark">
                         <p class="h2 text-decoration-underline">A propos</p>
+
+
+                        <!-- Modal information produit-->
+                        <!-- svg modal Personalise-->  
+                         <svg height="32pt" viewBox="0 0 512 512" width="32pt" xmlns="http://www.w3.org/2000/svg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                         <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                             <div class="modal-dialog">
+                             <div class="modal-content">
+                                 <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                 ...
+                                 </div>
+                                 <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                                 </div>
+                             </div>
+                             </div>
+                         </div><!-- Modal -->
+  
                     </div><!-- A propos -->
 
                 <!-- Contact -->
@@ -480,4 +607,4 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>     
-</html>    
+</html>   
