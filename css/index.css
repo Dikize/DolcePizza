@@ -20,10 +20,9 @@ h2 {
 
 /*--------- Accueil ---------*/
 .accueil {
-  background: url("../RESOURCES pizzaDolce/pizzaCom.jpg") no-repeat center/cover;
+  background: url("../RESOURCES pizzaDolce/pizza.jpg") no-repeat center/cover;
   background-size: cover;
   background-position: center;
-  background-position: 0px -299px;
   border-bottom: 1px dotted #777;
 }
 
@@ -424,7 +423,7 @@ h2 {
 .parallax {
   width: 100%;
   height: 300px;
-  background: url(ressources/parallax-large-flou.jpg);
+  background: url("ressources/parallax-large-flou.jpg");
   background-position: center;
   background-attachment: fixed;
   display: -webkit-box;
