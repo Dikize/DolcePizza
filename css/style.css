@@ -5,3 +5,11 @@
 body {
   background: #838080;
 }
+
+.test{
+  background: url("../RESOURCES pizzaDolce/pizza3.jpg") no-repeat center/cover;
+}
+
+.test h1{
+  color: #fff;
+}
