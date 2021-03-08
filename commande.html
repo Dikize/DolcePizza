@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-    <!-------------- Navbar -------------->
+    <!--------------################ (Container Navbar Principal) ################-------------->
     <section class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
                     <div class="container-fluid">
                         <!---- ---->
-                        <img src="RESOURCES pizzaDolce/logo.png" class="navbar-brand" alt="" style="height: 60px;">       
+                        <img src="RESOURCES pizzaDolce/logo.png" class="navbar-brand" alt="" style="height: 60px;">               
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -30,18 +31,15 @@
                                 </li>
     
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="pizza.html">COMMANDE</a>
+                                    <a class="nav-link" aria-current="page" href="commande.html">COMMANDE</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="pizza.html">PIZZA</a>
-                                </li>
-                        
+                               
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Produits</a>
                                     <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="pizza.html">PIZZA</a></li>
                                         <li><a class="dropdown-item" href="#">TOP VENTE</a></li>
+                                        <li><a class="dropdown-item active" href="pizza.html">PIZZA</a></li>
                                         <li><a class="dropdown-item" href="#">BURGER</a></li>
                                         <li><a class="dropdown-item" href="#">TEX-MEX</a></li>
                                         <li><a class="dropdown-item" href="#">SALADE</a></li>
@@ -73,150 +71,1452 @@
         </div>
     </section>
 
-    <!-----############# Offre promotionnel #############----->
-    <div class="jumbotron mt-5">
-        <div class="container">
-          <h1 class="display-3 text-center">Offre promotionnel</h1>
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Mega</h5>
-                  <p>Heeee</p>
+
+    <!--------------################ (Container Carousel) ################-------------->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-1 mt-4 bg-secondary rounded-1">
+                <div class="jumbotron mt-5">
+                    <div class="container">
+                      <h1 class="display-3 text-center">Offre pizza</h1>
+                      <div id="carouselPromo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                              <h5>Mega</h5>
+                              <p>Heeee</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                              <h5>Mega</h5>
+                              <p>Heeee</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                              <h5>Mega</h5>
+                              <p>Heeee</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                              <h5>Mega</h5>
+                              <p>Heeee</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                              <h5>Mega</h5>
+                              <p>Heeee</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromo"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Precedent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPromo"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+                    <p class="text-center mt-3"><a class="btn btn-primary btn-lg" href="#" role="button">Promotion &raquo;</a></p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Mega</h5>
-                  <p>Heeee</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------################ (Container milieu) ################-------------->
+    <section class="container-fluid mt-2">
+        <div class="row">
+
+            <ul class="nav nav-pills d-block d-sm-none d-flex justify-content-between border" id="v-pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-topVente-tab" data-bs-toggle="pill" data-bs-target="#v-pills-topVente" type="button" role="tab" aria-controls="v-pills-topVente" aria-selected="false">TOP VENTE</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="v-pills-pizza-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pizza" type="button" role="tab" aria-controls="v-pills-pizza" aria-selected="true">PIZZA</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-burger-tab" data-bs-toggle="pill" data-bs-target="#v-pills-burger" type="button" role="tab" aria-controls="v-pills-burger" aria-selected="false">BURGER</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-texMex-tab" data-bs-toggle="pill" data-bs-target="#v-pills-texMex" type="button" role="tab" aria-controls="v-pills-texMex" aria-selected="false">TEX-MEX</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-panini-tab" data-bs-toggle="pill" data-bs-target="#v-pills-panini" type="button" role="tab" aria-controls="v-pills-panini" aria-selected="false">PANINI</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-salade-tab" data-bs-toggle="pill" data-bs-target="#v-pills-salade" type="button" role="tab" aria-controls="v-pills-salade" aria-selected="false">SALADE</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dessert" type="button" role="tab" aria-controls="v-pills-dessert" aria-selected="false">DESSERTS</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-boisson-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boisson" type="button" role="tab" aria-controls="v-pills-boisson" aria-selected="false">BOISSON</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="v-pills-glace-tab" data-bs-toggle="pill" data-bs-target="#v-pills-glace" type="button" role="tab" aria-controls="v-pills-glace" aria-selected="false">GLACES</button>
+                </li>
+                
+            </ul>
+
+            <!-------------- (Contenu) -------------->
+            <section class="col-12 col-sm-9 bg-secondary rounded-1">
+
+                <main class="d-flex align-items-start">
+                    <div class="col-3 nav flex-column nav-pills border d-none d-sm-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link" id="v-pills-topVente-tab" data-bs-toggle="pill" data-bs-target="#v-pills-topVente" type="button" role="tab" aria-controls="v-pills-topVente" aria-selected="true">TOP VENTE</button>
+                        <button class="nav-link active" id="v-pills-pizza-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pizza" type="button" role="tab" aria-controls="v-pills-pizza" aria-selected="false">PIZZA</button>
+                        <button class="nav-link" id="v-pills-burger-tab" data-bs-toggle="pill" data-bs-target="#v-pills-burger" type="button" role="tab" aria-controls="v-pills-burger" aria-selected="false">BURGER</button>
+                        <button class="nav-link" id="v-pills-texMex-tab" data-bs-toggle="pill" data-bs-target="#v-pills-texMex" type="button" role="tab" aria-controls="v-pills-texMex" aria-selected="false">TEX-MEX</button>
+                        <button class="nav-link" id="v-pills-panini-tab" data-bs-toggle="pill" data-bs-target="#v-pills-panini" type="button" role="tab" aria-controls="v-pills-panini" aria-selected="false">PANINI</button>
+                        <button class="nav-link" id="v-pills-salade-tab" data-bs-toggle="pill" data-bs-target="#v-pills-salade" type="button" role="tab" aria-controls="v-pills-salade" aria-selected="false">SALADE</button>
+                        <button class="nav-link" id="v-pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dessert" type="button" role="tab" aria-controls="v-pills-dessert" aria-selected="false">DESSERTS</button>
+                        <button class="nav-link" id="v-pills-boisson-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boisson" type="button" role="tab" aria-controls="v-pills-boisson" aria-selected="false">BOISSON</button>
+                        <button class="nav-link" id="v-pills-glace-tab" data-bs-toggle="pill" data-bs-target="#v-pills-glace" type="button" role="tab" aria-controls="v-pills-glace" aria-selected="false">GLACES</button>
+                    </div>
+                    <div class="tab-content col-19" id="v-pills-tabContent">
+                        
+                        <!---- (TOP-VENTE) ---->
+                        <div class="tab-pane fade show ps-4" id="v-pills-topVente" role="tabpanel" aria-labelledby="v-pills-topVente-tab">
+
+
+                        </div><!---- (fin TOP-VENTE) ---->
+
+
+                        <!---- (PIZZA) ---->
+                        <div class="tab-pane fade show active ps-4" id="v-pills-pizza" role="tabpanel" aria-labelledby="v-pills-pizza-tab">
+                            <section class="row col-12">
+                                
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="52" height="52"><path d="M20.005,512c-5.097,0-10.116-1.948-13.925-5.641c-5.845-5.666-7.672-14.309-4.621-21.855l45.411-112.333  C16.162,332.253,0,285.425,0,236c0-63.375,26.855-122.857,75.62-167.489C123.891,24.331,187.952,0,256,0  s132.109,24.331,180.38,68.511C485.145,113.143,512,172.625,512,236c0,45.448-14.04,89.577-40.602,127.615  c-6.325,9.057-18.792,11.271-27.849,4.947s-11.271-18.792-4.947-27.849C460.452,309.425,472,273.215,472,236  c0-108.075-96.897-196-216-196S40,127.925,40,236c0,43.783,15.577,85.2,45.046,119.773c4.834,5.671,6.115,13.561,3.321,20.47  l-31.366,77.589l91.345-40.266c5.063-2.231,10.826-2.267,15.916-0.095C193.082,425.766,223.946,432,256,432  c36.892,0,73.299-8.587,105.286-24.832c9.85-5,21.887-1.072,26.889,8.775c5.001,9.849,1.073,21.887-8.775,26.889  C341.828,461.914,299.157,472,256,472c-34.48,0-67.835-6.191-99.276-18.413L28.068,510.301C25.474,511.444,22.728,512,20.005,512z   M276,325V217c0-11.046-8.954-20-20-20s-20,8.954-20,20v108c0,11.046,8.954,20,20,20S276,336.046,276,325z M256,128  c-11.046,0-20,8.954-20,20l0,0c0,11.046,8.954,20,20,20s20-8.954,20-20l0,0C276,136.954,267.046,128,256,128z"/></svg> -->
+                                        
+                                        <h5 class="card-title m-1">4 Fromage</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg modal Plus -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            <!--Contenu Modal Plus -->
+                                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Ingredients suppl.</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body d-flex justify-content-center">
+                                                            <!-- Supplement -->
+                                                            <div class="list-group text-center col-12">
+                                                                <label class="list-group-item">
+                                                                    <h3 class="h3">Double Fromage</h3>
+                                                                    <div class="Row d-flex mt-3">
+                                                                        <div class="col-8 d-flex justify-content-center">
+                                                                            <div class="col-5">
+                                                                                <svg height="15pt" viewBox="0 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><circle style="fill:#2196f3;" cx="256" cy="256" r="236.17"/><path style="fill:#2196f3;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/></g><path style="fill:#FFFFFF;" d="M355.148,273.866H156.852c-10.946,0-19.83-8.884-19.83-19.83s8.884-19.83,19.83-19.83h198.296c10.966,0,19.83,8.884,19.83,19.83S366.114,273.866,355.148,273.866z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.99 511.99" style="enable-background:new 0 0 511.99 511.99;" xml:space="preserve"><g><ellipse style="fill:#2196f3;" cx="255.992" cy="255.999" rx="236.278" ry="236.278"/><path style="fill:#2196f3;" d="M255.995,511.979c-65.587,0-131.174-24.957-181.108-74.872c-99.849-99.849-99.849-262.348,0-362.217l0,0c99.849-99.829,262.368-99.849,362.217,0c99.849,99.869,99.849,262.348,0,362.217C387.169,487.022,321.562,511.979,255.995,511.979z M102.939,102.942c-84.374,84.394-84.374,221.719,0,306.113c84.414,84.374,221.738,84.394,306.113,0s84.374-221.719,0-306.113C324.637,18.568,187.333,18.568,102.939,102.942L102.939,102.942z"/></g><g><path style="fill:#FFFFFF;" d="M187.115,344.678c-5.079,0-10.157-1.944-14.026-5.813c-7.757-7.757-7.757-20.295,0-28.052l140.26-140.26c7.757-7.757,20.295-7.757,28.052,0c7.757,7.757,7.757,20.295,0,28.052l-140.26,140.26C197.252,342.734,192.193,344.678,187.115,344.678z"/><path style="fill:#FFFFFF;" d="M327.355,344.678c-5.079,0-10.157-1.944-14.026-5.813l-140.26-140.26c-7.757-7.757-7.757-20.295,0-28.052s20.295-7.757,28.052,0l140.26,140.26c7.757,7.757,7.757,20.295,0,28.052C337.513,342.734,332.434,344.678,327.355,344.678z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                            </div>
+                                                                            <div class="col-2 input">
+                                                                                <span class="input-group-text">0</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 input-group w-50">
+                                                                            <span class="input-group-text">0.00</span>
+                                                                            <span class="input-group-text">€</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                                <hr>
+                                                                <label class="list-group-item">
+                                                                    <h3 class="h3">Double Fromage</h3>
+                                                                    <div class="Row d-flex mt-3">
+                                                                        <div class="col-8 d-flex justify-content-center">
+                                                                            <div class="col-5">
+                                                                                <svg height="15pt" viewBox="0 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><circle style="fill:#2196f3;" cx="256" cy="256" r="236.17"/><path style="fill:#2196f3;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/></g><path style="fill:#FFFFFF;" d="M355.148,273.866H156.852c-10.946,0-19.83-8.884-19.83-19.83s8.884-19.83,19.83-19.83h198.296c10.966,0,19.83,8.884,19.83,19.83S366.114,273.866,355.148,273.866z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.99 511.99" style="enable-background:new 0 0 511.99 511.99;" xml:space="preserve"><g><ellipse style="fill:#2196f3;" cx="255.992" cy="255.999" rx="236.278" ry="236.278"/><path style="fill:#2196f3;" d="M255.995,511.979c-65.587,0-131.174-24.957-181.108-74.872c-99.849-99.849-99.849-262.348,0-362.217l0,0c99.849-99.829,262.368-99.849,362.217,0c99.849,99.869,99.849,262.348,0,362.217C387.169,487.022,321.562,511.979,255.995,511.979z M102.939,102.942c-84.374,84.394-84.374,221.719,0,306.113c84.414,84.374,221.738,84.394,306.113,0s84.374-221.719,0-306.113C324.637,18.568,187.333,18.568,102.939,102.942L102.939,102.942z"/></g><g><path style="fill:#FFFFFF;" d="M187.115,344.678c-5.079,0-10.157-1.944-14.026-5.813c-7.757-7.757-7.757-20.295,0-28.052l140.26-140.26c7.757-7.757,20.295-7.757,28.052,0c7.757,7.757,7.757,20.295,0,28.052l-140.26,140.26C197.252,342.734,192.193,344.678,187.115,344.678z"/><path style="fill:#FFFFFF;" d="M327.355,344.678c-5.079,0-10.157-1.944-14.026-5.813l-140.26-140.26c-7.757-7.757-7.757-20.295,0-28.052s20.295-7.757,28.052,0l140.26,140.26c7.757,7.757,7.757,20.295,0,28.052C337.513,342.734,332.434,344.678,327.355,344.678z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                            </div>
+                                                                            <div class="col-2 input">
+                                                                                <span class="input-group-text">0</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 input-group w-50">
+                                                                            <span class="input-group-text">0.00</span>
+                                                                            <span class="input-group-text">€</span>
+                                                                        </div>
+                                                                    </div> 
+                                                                </label>
+                                                                <label class="list-group-item">
+                                                                    <h3 class="h3">Base Sauce Barbecue</h3>
+                                                                    <div class="Row d-flex mt-3">
+                                                                        <div class="col-8 d-flex justify-content-center">
+                                                                            <div class="col-5">
+                                                                                <svg height="15pt" viewBox="0 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><circle style="fill:#2196f3;" cx="256" cy="256" r="236.17"/><path style="fill:#2196f3;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/></g><path style="fill:#FFFFFF;" d="M355.148,273.866H156.852c-10.946,0-19.83-8.884-19.83-19.83s8.884-19.83,19.83-19.83h198.296c10.966,0,19.83,8.884,19.83,19.83S366.114,273.866,355.148,273.866z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.99 511.99" style="enable-background:new 0 0 511.99 511.99;" xml:space="preserve"><g><ellipse style="fill:#2196f3;" cx="255.992" cy="255.999" rx="236.278" ry="236.278"/><path style="fill:#2196f3;" d="M255.995,511.979c-65.587,0-131.174-24.957-181.108-74.872c-99.849-99.849-99.849-262.348,0-362.217l0,0c99.849-99.829,262.368-99.849,362.217,0c99.849,99.869,99.849,262.348,0,362.217C387.169,487.022,321.562,511.979,255.995,511.979z M102.939,102.942c-84.374,84.394-84.374,221.719,0,306.113c84.414,84.374,221.738,84.394,306.113,0s84.374-221.719,0-306.113C324.637,18.568,187.333,18.568,102.939,102.942L102.939,102.942z"/></g><g><path style="fill:#FFFFFF;" d="M187.115,344.678c-5.079,0-10.157-1.944-14.026-5.813c-7.757-7.757-7.757-20.295,0-28.052l140.26-140.26c7.757-7.757,20.295-7.757,28.052,0c7.757,7.757,7.757,20.295,0,28.052l-140.26,140.26C197.252,342.734,192.193,344.678,187.115,344.678z"/><path style="fill:#FFFFFF;" d="M327.355,344.678c-5.079,0-10.157-1.944-14.026-5.813l-140.26-140.26c-7.757-7.757-7.757-20.295,0-28.052s20.295-7.757,28.052,0l140.26,140.26c7.757,7.757,7.757,20.295,0,28.052C337.513,342.734,332.434,344.678,327.355,344.678z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                            </div>
+                                                                            <div class="col-2 input">
+                                                                                <span class="input-group-text">0</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 input-group w-50">
+                                                                            <span class="input-group-text">0.00</span>
+                                                                            <span class="input-group-text">€</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="list-group-item">
+                                                                    <h3 class="h3">merguez</h3>
+                                                                    <div class="Row d-flex mt-3">
+                                                                        <div class="col-8 d-flex justify-content-center">
+                                                                            <div class="col-5">
+                                                                                <svg height="15pt" viewBox="0 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><circle style="fill:#2196f3;" cx="256" cy="256" r="236.17"/><path style="fill:#2196f3;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/></g><path style="fill:#FFFFFF;" d="M355.148,273.866H156.852c-10.946,0-19.83-8.884-19.83-19.83s8.884-19.83,19.83-19.83h198.296c10.966,0,19.83,8.884,19.83,19.83S366.114,273.866,355.148,273.866z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.99 511.99" style="enable-background:new 0 0 511.99 511.99;" xml:space="preserve"><g><ellipse style="fill:#2196f3;" cx="255.992" cy="255.999" rx="236.278" ry="236.278"/><path style="fill:#2196f3;" d="M255.995,511.979c-65.587,0-131.174-24.957-181.108-74.872c-99.849-99.849-99.849-262.348,0-362.217l0,0c99.849-99.829,262.368-99.849,362.217,0c99.849,99.869,99.849,262.348,0,362.217C387.169,487.022,321.562,511.979,255.995,511.979z M102.939,102.942c-84.374,84.394-84.374,221.719,0,306.113c84.414,84.374,221.738,84.394,306.113,0s84.374-221.719,0-306.113C324.637,18.568,187.333,18.568,102.939,102.942L102.939,102.942z"/></g><g><path style="fill:#FFFFFF;" d="M187.115,344.678c-5.079,0-10.157-1.944-14.026-5.813c-7.757-7.757-7.757-20.295,0-28.052l140.26-140.26c7.757-7.757,20.295-7.757,28.052,0c7.757,7.757,7.757,20.295,0,28.052l-140.26,140.26C197.252,342.734,192.193,344.678,187.115,344.678z"/><path style="fill:#FFFFFF;" d="M327.355,344.678c-5.079,0-10.157-1.944-14.026-5.813l-140.26-140.26c-7.757-7.757-7.757-20.295,0-28.052s20.295-7.757,28.052,0l140.26,140.26c7.757,7.757,7.757,20.295,0,28.052C337.513,342.734,332.434,344.678,327.355,344.678z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                            </div>
+                                                                            <div class="col-2 input">
+                                                                                <span class="input-group-text">0</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 input-group w-50">
+                                                                            <span class="input-group-text">0.00</span>
+                                                                            <span class="input-group-text">€</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="list-group-item">
+                                                                    <h3 class="h3">Poivrons</h3>
+                                                                    <div class="Row d-flex mt-3">
+                                                                        <div class="col-8 d-flex justify-content-center">
+                                                                            <div class="col-5">
+                                                                                <svg height="15pt" viewBox="0 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><circle style="fill:#2196f3;" cx="256" cy="256" r="236.17"/><path style="fill:#2196f3;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/></g><path style="fill:#FFFFFF;" d="M355.148,273.866H156.852c-10.946,0-19.83-8.884-19.83-19.83s8.884-19.83,19.83-19.83h198.296c10.966,0,19.83,8.884,19.83,19.83S366.114,273.866,355.148,273.866z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.99 511.99" style="enable-background:new 0 0 511.99 511.99;" xml:space="preserve"><g><ellipse style="fill:#2196f3;" cx="255.992" cy="255.999" rx="236.278" ry="236.278"/><path style="fill:#2196f3;" d="M255.995,511.979c-65.587,0-131.174-24.957-181.108-74.872c-99.849-99.849-99.849-262.348,0-362.217l0,0c99.849-99.829,262.368-99.849,362.217,0c99.849,99.869,99.849,262.348,0,362.217C387.169,487.022,321.562,511.979,255.995,511.979z M102.939,102.942c-84.374,84.394-84.374,221.719,0,306.113c84.414,84.374,221.738,84.394,306.113,0s84.374-221.719,0-306.113C324.637,18.568,187.333,18.568,102.939,102.942L102.939,102.942z"/></g><g><path style="fill:#FFFFFF;" d="M187.115,344.678c-5.079,0-10.157-1.944-14.026-5.813c-7.757-7.757-7.757-20.295,0-28.052l140.26-140.26c7.757-7.757,20.295-7.757,28.052,0c7.757,7.757,7.757,20.295,0,28.052l-140.26,140.26C197.252,342.734,192.193,344.678,187.115,344.678z"/><path style="fill:#FFFFFF;" d="M327.355,344.678c-5.079,0-10.157-1.944-14.026-5.813l-140.26-140.26c-7.757-7.757-7.757-20.295,0-28.052s20.295-7.757,28.052,0l140.26,140.26c7.757,7.757,7.757,20.295,0,28.052C337.513,342.734,332.434,344.678,327.355,344.678z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                            </div>
+                                                                            <div class="col-2 input">
+                                                                                <span class="input-group-text">0</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 input-group w-50">
+                                                                            <span class="input-group-text">0.00</span>
+                                                                            <span class="input-group-text">€</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                                <label class="list-group-item">
+                                                                    <h3 class="h3">Viande hachée</h3>
+                                                                    <div class="Row d-flex mt-3">
+                                                                        <div class="col-8 d-flex justify-content-center">
+                                                                            <div class="col-5">
+                                                                                <svg height="15pt" viewBox="0 0 512 512" width="15pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><circle style="fill:#2196f3;" cx="256" cy="256" r="236.17"/><path style="fill:#2196f3;" d="M256,512C114.853,512,0,397.167,0,256C0,114.853,114.853,0,256,0c141.167,0,256,114.853,256,256C512,397.167,397.167,512,256,512z M256,39.659C136.705,39.659,39.659,136.705,39.659,256S136.705,472.341,256,472.341S472.341,375.275,472.341,256C472.341,136.705,375.295,39.659,256,39.659z"/></g><path style="fill:#FFFFFF;" d="M355.148,273.866H156.852c-10.946,0-19.83-8.884-19.83-19.83s8.884-19.83,19.83-19.83h198.296c10.966,0,19.83,8.884,19.83,19.83S366.114,273.866,355.148,273.866z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                                <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.99 511.99" style="enable-background:new 0 0 511.99 511.99;" xml:space="preserve"><g><ellipse style="fill:#2196f3;" cx="255.992" cy="255.999" rx="236.278" ry="236.278"/><path style="fill:#2196f3;" d="M255.995,511.979c-65.587,0-131.174-24.957-181.108-74.872c-99.849-99.849-99.849-262.348,0-362.217l0,0c99.849-99.829,262.368-99.849,362.217,0c99.849,99.869,99.849,262.348,0,362.217C387.169,487.022,321.562,511.979,255.995,511.979z M102.939,102.942c-84.374,84.394-84.374,221.719,0,306.113c84.414,84.374,221.738,84.394,306.113,0s84.374-221.719,0-306.113C324.637,18.568,187.333,18.568,102.939,102.942L102.939,102.942z"/></g><g><path style="fill:#FFFFFF;" d="M187.115,344.678c-5.079,0-10.157-1.944-14.026-5.813c-7.757-7.757-7.757-20.295,0-28.052l140.26-140.26c7.757-7.757,20.295-7.757,28.052,0c7.757,7.757,7.757,20.295,0,28.052l-140.26,140.26C197.252,342.734,192.193,344.678,187.115,344.678z"/><path style="fill:#FFFFFF;" d="M327.355,344.678c-5.079,0-10.157-1.944-14.026-5.813l-140.26-140.26c-7.757-7.757-7.757-20.295,0-28.052s20.295-7.757,28.052,0l140.26,140.26c7.757,7.757,7.757,20.295,0,28.052C337.513,342.734,332.434,344.678,327.355,344.678z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                                                            </div>
+                                                                            <div class="col-2 input">
+                                                                                <span class="input-group-text">0</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 input-group w-50">
+                                                                            <span class="input-group-text">0.00</span>
+                                                                            <span class="input-group-text">€</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">Sauvegarde</button>
+                                                            <a type="button" href="personalise.html" class="btn btn-primary nav-link">Plus de produits</a> 
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ferme</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- Modal -->
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+
+                                
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">Marguerita</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">Reine</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">Végétarienne</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">PÊCHEUR</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">4 SAISONS</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">REGINA</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">ORIENTALE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">CALZONE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">MEXICAINE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">3 VIANDES</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">FRUITS DE MER</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">KEBAB</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">SICILIENE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">NORVEGIENNE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">CHÈVRE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">PAYSANNE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">BOURSIN</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">COUNTRY</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">CHICAGO</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">CHICKEN</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">INDIENNE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">TARTIFLETTE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+
+                                
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">PIMENTO</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+
+                                
+                                <!---- PIZZA ---->
+                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">BUFFALO</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+                    
+                                    </div>
+                                </div><!---- fin card pizza ---->
+                            </section>
+                        </div><!---- (fin pizza) ---->
+
+                        <!---- (burger) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-burger" role="tabpanel" aria-labelledby="v-pills-burger-tab">
+                                <section class="row col-12">
+                                    <!---- CHEESE BURGER ---->
+                                    <div class="card-group col-6 text-center shadow p-1">
+                                        <div class="card m-0">
+                                            <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="52" height="52"><path d="M20.005,512c-5.097,0-10.116-1.948-13.925-5.641c-5.845-5.666-7.672-14.309-4.621-21.855l45.411-112.333  C16.162,332.253,0,285.425,0,236c0-63.375,26.855-122.857,75.62-167.489C123.891,24.331,187.952,0,256,0  s132.109,24.331,180.38,68.511C485.145,113.143,512,172.625,512,236c0,45.448-14.04,89.577-40.602,127.615  c-6.325,9.057-18.792,11.271-27.849,4.947s-11.271-18.792-4.947-27.849C460.452,309.425,472,273.215,472,236  c0-108.075-96.897-196-216-196S40,127.925,40,236c0,43.783,15.577,85.2,45.046,119.773c4.834,5.671,6.115,13.561,3.321,20.47  l-31.366,77.589l91.345-40.266c5.063-2.231,10.826-2.267,15.916-0.095C193.082,425.766,223.946,432,256,432  c36.892,0,73.299-8.587,105.286-24.832c9.85-5,21.887-1.072,26.889,8.775c5.001,9.849,1.073,21.887-8.775,26.889  C341.828,461.914,299.157,472,256,472c-34.48,0-67.835-6.191-99.276-18.413L28.068,510.301C25.474,511.444,22.728,512,20.005,512z   M276,325V217c0-11.046-8.954-20-20-20s-20,8.954-20,20v108c0,11.046,8.954,20,20,20S276,336.046,276,325z M256,128  c-11.046,0-20,8.954-20,20l0,0c0,11.046,8.954,20,20,20s20-8.954,20-20l0,0C276,136.954,267.046,128,256,128z"/></svg> -->
+                                            <h5 class="card-title m-1">CHEESE BURGER</h5>
+                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                                <!-- svg modal Plus -->  
+                                                <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                
+                                                <p class="h5">10 €</p>
+                                            </div><!--  -->
+                                            
+                                            <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                    </div><!---- fin CHEESE BURGER ---->
+
+                                    
+                                    <!---- DOUBLE CHEESE ---->
+                                    <div class="card-group col-6 text-center shadow p-1">
+                                        <div class="card m-0">
+                                            <img src="RESOURCES pizzaDolce/img-burger/burger-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                            <h5 class="card-title m-1">DOUBLE CHEESE</h5>
+                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                                <!-- svg Plus modal -->  
+                                                <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                
+                                            <p class="h5">10 €</p>
+                                            </div><!--  -->
+                                            
+                                            <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                    </div><!---- fin DOUBLE CHEESE ---->
+                                    
+                                    <!---- LE 180 ---->
+                                    <div class="card-group col-6 text-center shadow p-1">
+                                        <div class="card m-0">
+                                            <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                            <h5 class="card-title m-1">LE 180</h5>
+                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                                <!-- svg Plus modal -->  
+                                                <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                
+                                            <p class="h5">10 €</p>
+                                            </div><!--  -->
+                                            
+                                            <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                    </div><!---- fin LE 180 ---->
+
+                                    <!---- LE 360 ---->
+                                    <div class="card-group col-6 text-center shadow p-1">
+                                        <div class="card m-0">
+                                            <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                            <h5 class="card-title m-1">LE 360</h5>
+                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                                <!-- svg Plus modal -->  
+                                                <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                                
+                                            <p class="h5">10 €</p>
+                                            </div><!--  -->
+                                            
+                                            <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                    <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                    </div><!---- fin LE 360 ---->
+                                
+                                </section>
+                        </div><!---- (Fin burger) ---->
+                        
+                        <!---- (tex-Mex) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-texMex" role="tabpanel" aria-labelledby="v-pills-texMex-tab">texMex
+                            <section class="row col-12">
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/steck-four-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">Heeu</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- fin ---->
+                                
+                                
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/steck-four-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">Heeu</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- fin ---->
+
+                            </section>
+                        </div><!---- (Fin ) ---->
+
+                        <!---- (Panini) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-panini" role="tabpanel" aria-labelledby="v-pills-panini-tab">
+                            <section class="row col-12">
+                                <!---- Chèvre ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">CHÈVRE</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- Fin Chèvre---->
+                                
+                                <!---- Jambon ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">JAMBON</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- fin JAMBON ---->
+                                
+                                <!---- SAUMON ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">SAUMON</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- fin SAUMON ---->
+                                
+                                <!---- FERMIER ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">FERMIER</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- fin ---->
+                                
+                                
+                                <!---- 3 FROMAGE ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">3 FROMAGES</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div><!---- fin ---->
+                            
+                            </section>
+                        </div><!---- (Fin Panini) ---->
+                        
+                        <!---- (salade) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-salade" role="tabpanel" aria-labelledby="v-pills-salade-tab">
+                            <section class="row col-12">
+
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/salade-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">LE 360</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+                                
+
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/salade-p.jpg" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">LE 360</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+
+
+                            </section>                            
+                        </div><!---- (Fin salade) ---->
+                                
+                        
+                        <!---- (dessert) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-dessert" role="tabpanel" aria-labelledby="v-pills-dessert-tab">dessert
+                            <section class="row col-12">
+
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">dessert</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+                                
+
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">dessert</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+
+                            </section>                 
+                        </div><!---- (Fin dessert) ---->
+                        
+                        <!---- (boisson) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-boisson" role="tabpanel" aria-labelledby="v-pills-boisson-tab">boisson
+                            <section class="row col-12">
+                                
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">boisson</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+                                
+                                
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">boisson</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+
+                            </section>                            
+                        </div><!---- (Fin boisson) ---->
+                        
+                        <!---- (glace) ---->
+                        <div class="tab-pane fade ps-4" id="v-pills-glace" role="tabpanel" aria-labelledby="v-pills-glace-tab">glace
+                            <section class="row col-12">
+                                
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">glace</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+                                
+                                
+                                <!----  ---->
+                                <div class="card-group col-6 text-center shadow p-1">
+                                    <div class="card m-0">
+                                        <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
+                                        <h5 class="card-title m-1">GLACES</h5>
+                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <!-- svg Plus modal -->  
+                                            <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
+                                            
+                                        <p class="h5">10 €</p>
+                                        </div><!--  -->
+                                        
+                                        <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                            </svg>
+                                        </div>
+    
+                                    </div>
+                                </div><!---- fin ---->
+
+                            </section>                        
+                        </div><!---- (Fin glace) ---->
+
+                    </div>
+                </main>
+                  
+            </section>
+
+            
+            <!-------------- Navbar Droite -------------->
+            <section class="container-fluid col-sm-3 d-flex flex-column justify-content-between bg-secondary rounded-1 d-none d-sm-block border">
+                
+                <!---- SVG panier ---->                
+                <div class="row  border-bottom border-dark">
+                    <div class="col-12 p-1 d-flex justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="navbar-brand bi bi-cart4 d-flex align-self-baseline" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                        </svg>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Mega</h5>
-                  <p>Heeee</p>
+
+                <!---- Contenue Panier ---->
+                <div class="row">
+                    <div class="col-12 p-4">
+                        <ul class="navbar-nav flex-column nav-pills nav-fill">
+                                
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Mega</h5>
-                  <p>Heeee</p>
+
+                <!---- Total et Bouton commande ---->
+                <div class="row border-top border-dark">
+                    <div class="col-12 d-flex justify-content-between">
+                        <p class="">Total TTC :</p>
+                        <p class="">0.00 €</p>
+                    </div>
+
+                    <div class="col-12 border-top border-dark">
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="radio" name="radioLivraison" id="radioLivraison1" value="option1" aria-label="coche commande en Livraison">
+                            <label class="form-check-label" for="radioLivraison1">Livraison</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="radio" name="radioEmporte" id="radioEmporte1" value="option2" aria-label="coche commande à Emporte">
+                            <label class="form-check-label" for="radioEmporte1">Emporte</label>
+                        </div>
+                    </div>
+
+                    <div class="btn bg-success p-2 fs-6">Valider la commande
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-dash w-25" viewBox="0 0 16 16">
+                            <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                        </svg>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Mega</h5>
-                  <p>Heeee</p>
-                </div>
-              </div>
+            </section>
+
+        </div>
+    </section>
+    
+    <!--------------################ (dernier Container footer) ################-------------->
+    <section class="container-fluid">
+        <div class="row bg-secondary mt-1 rounded-1">
+            <div class="row col-12 p-1 m-0">
+
+                <!-- Horaire -->
+                <div class="col-12 col-sm-4 text-center">
+                    <p class="h2 text-decoration-underline">Horaires</p>
+                    <table class="table table-striped rounded-1 shadow border">
+                        <thead>
+                            <tr>
+                                <th scope="col">Jour</th>
+                                <th scope="col">Matin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Lundi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mardi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mercredi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jeudi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Vendredi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Samedi</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dimanche</th>
+                                <td>11:00-02:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- Horaire -->
+
+                <!-- A propos -->
+                    <div class="col-12 col-sm-4 text-center border border-dark">
+                        <p class="h2 text-decoration-underline">A propos</p>
+  
+                    </div><!-- A propos -->
+
+                <!-- Contact -->
+                <div class="col-12 col-sm-4">
+                    <div class="d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                        </svg>
+                        <p class="h2 mb-5 ms-5 text-decoration-underline">Contact</p>
+                    </div>
+
+                    <address class="d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <p class="fs-6 fs-md-3 ms-2">35 Rue Henri Barbusse, 93200 Saint Denis</p>
+                    </address>
+
+                    <div class="fs-6 fs-md-3 d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                        </svg>
+                        <p><a class="nav-link link-dark" href="mailto:Dolce@gmail.com?subject=Contact%20depuis%2020Dolce.com">Dolce@gmail.com</a></p>
+                    </div>
+
+                    <div class="fs-6 fs-md-3 d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <p><a class="nav-link link-dark" href="tel:+33987374144">09 87 37 41 44</a></p>
+                    </div>
+
+                    <div class="fs-6 fs-md-3 d-flex ms-md-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <p><a class="nav-link link-dark" href="https://fr-fr.facebook.com/">Facebook</a></p>
+                    </div>
+                </div><!-- Horaire -->
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Precedent</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Suivant</span>
-            </button>
+
         </div>
-        <p class="text-center mt-3"><a class="btn btn-primary btn-lg" href="#" role="button">Promotion &raquo;</a></p>
-        </div>
-    </div>
-    <!-----############# Select commande #############----->
-    <div class="row  m-2">
+    </section>
 
-        <!-------------- TOP VENTE -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">TOP VENTE</a></div><!---- ---->
 
-            </div>
-        </div>
-
-        <!-------------- PIZZA -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="pizza.html" class="btn">PIZZA</a></div><!---- ---->
-
-            </div>
-        </div>
-
-        <!-------------- Burger -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">BURGER</a></div><!---- ---->
-
-            </div>
-        </div>
-
-        
-        <!-------------- TEX-MEX -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/img-burger/burger-p.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">TEX-MEX</a></div><!---- ---->
-
-            </div>
-        </div>
-
-        
-        <!-------------- Salade -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">SALADE</a></div><!---- ---->
-
-            </div>
-        </div>
-
-        
-        <!-------------- DESSERTS -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">DESSERTS</a></div><!---- ---->
-
-            </div>
-        </div>
-
-        
-        <!-------------- BOISSON -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">BOISSON</a></div><!---- ---->
-
-            </div>
-        </div>
-
-        
-        <!-------------- GLACE -------------->
-        <div class="card-group col-sm-6 col-12 text-center shadow p-1">
-            <div class="card m-0">
-                <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail" alt="...">
-                <div class="btn bg-primary p-1 fs-6"><a href="#" class="btn">GLACES</a></div><!---- ---->
-
-            </div>
-        </div>
-        
-        
-    </div>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>     
-</html>    
+</html>   
