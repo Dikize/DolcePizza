@@ -77,7 +77,7 @@
         <div class="row">
             <div class="col-12 p-1 mt-4 bg-secondary rounded-1">
                 <div class="jumbotron mt-5">
-                    <div class="container">
+                    <div class="container-fluid">
                       <h1 class="display-3 text-center">Offre pizza</h1>
                       <div id="carouselPromo" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -177,9 +177,9 @@
             </ul>
 
             <!-------------- (Contenu) -------------->
-            <section class="col-12 col-sm-9 bg-secondary rounded-1">
+            <section class="col-12 col-sm-9 bg-secondary rounded-1 pe-0">
 
-                <main class="d-flex align-items-start">
+                <main class="d-flex justify-content-center">
                     <div class="col-3 nav flex-column nav-pills border d-none d-sm-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <button class="nav-link" id="v-pills-topVente-tab" data-bs-toggle="pill" data-bs-target="#v-pills-topVente" type="button" role="tab" aria-controls="v-pills-topVente" aria-selected="true">TOP VENTE</button>
                         <button class="nav-link active" id="v-pills-pizza-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pizza" type="button" role="tab" aria-controls="v-pills-pizza" aria-selected="false">PIZZA</button>
@@ -191,27 +191,29 @@
                         <button class="nav-link" id="v-pills-boisson-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boisson" type="button" role="tab" aria-controls="v-pills-boisson" aria-selected="false">BOISSON</button>
                         <button class="nav-link" id="v-pills-glace-tab" data-bs-toggle="pill" data-bs-target="#v-pills-glace" type="button" role="tab" aria-controls="v-pills-glace" aria-selected="false">GLACES</button>
                     </div>
-                    <div class="tab-content col-19" id="v-pills-tabContent">
+                    <div class="tab-content col-9 ms-3" id="v-pills-tabContent">
                         
                         <!---- (TOP-VENTE) ---->
-                        <div class="tab-pane fade show ps-4" id="v-pills-topVente" role="tabpanel" aria-labelledby="v-pills-topVente-tab">
+                        <div class="tab-pane fade show" id="v-pills-topVente" role="tabpanel" aria-labelledby="v-pills-topVente-tab">
 
 
                         </div><!---- (fin TOP-VENTE) ---->
 
 
                         <!---- (PIZZA) ---->
-                        <div class="tab-pane fade show active ps-4" id="v-pills-pizza" role="tabpanel" aria-labelledby="v-pills-pizza-tab">
+                        <div class="tab-pane fade show active" id="v-pills-pizza" role="tabpanel" aria-labelledby="v-pills-pizza-tab">
                             <section class="row col-12">
                                 
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
                                         <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="52" height="52"><path d="M20.005,512c-5.097,0-10.116-1.948-13.925-5.641c-5.845-5.666-7.672-14.309-4.621-21.855l45.411-112.333  C16.162,332.253,0,285.425,0,236c0-63.375,26.855-122.857,75.62-167.489C123.891,24.331,187.952,0,256,0  s132.109,24.331,180.38,68.511C485.145,113.143,512,172.625,512,236c0,45.448-14.04,89.577-40.602,127.615  c-6.325,9.057-18.792,11.271-27.849,4.947s-11.271-18.792-4.947-27.849C460.452,309.425,472,273.215,472,236  c0-108.075-96.897-196-216-196S40,127.925,40,236c0,43.783,15.577,85.2,45.046,119.773c4.834,5.671,6.115,13.561,3.321,20.47  l-31.366,77.589l91.345-40.266c5.063-2.231,10.826-2.267,15.916-0.095C193.082,425.766,223.946,432,256,432  c36.892,0,73.299-8.587,105.286-24.832c9.85-5,21.887-1.072,26.889,8.775c5.001,9.849,1.073,21.887-8.775,26.889  C341.828,461.914,299.157,472,256,472c-34.48,0-67.835-6.191-99.276-18.413L28.068,510.301C25.474,511.444,22.728,512,20.005,512z   M276,325V217c0-11.046-8.954-20-20-20s-20,8.954-20,20v108c0,11.046,8.954,20,20,20S276,336.046,276,325z M256,128  c-11.046,0-20,8.954-20,20l0,0c0,11.046,8.954,20,20,20s20-8.954,20-20l0,0C276,136.954,267.046,128,256,128z"/></svg> -->
                                         
-                                        <h5 class="card-title m-1">4 Fromage</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">4 Fromage
+                                            <svg class="svg" data-bs-toggle="modal" data-bs-target="#modalInfo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#54BBFF;" d="M256,0l-61.811,256L256,512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/><path style="fill:#8DD2FF;" d="M0,256c0,141.385,114.615,256,256,256V0C114.615,0,0,114.615,0,256z"/><path style="fill:#0789DE;" d="M256,30.905v450.189c124.316,0,225.095-100.778,225.095-225.095S380.316,30.905,256,30.905z"/><path style="fill:#2EA2EF;" d="M450.189,256c0-124.316-86.941-225.095-194.189-225.095C131.684,30.905,30.905,131.684,30.905,256	S131.684,481.095,256,481.095C363.248,481.095,450.189,380.316,450.189,256z"/><g><circle style="fill:#FFFFFF;" cx="256" cy="137.014" r="20.604"/><path style="fill:#FFFFFF;" d="M256,188.523c-11.379,0-20.604,9.224-20.604,20.604v165.859c0,11.379,9.224,20.604,20.604,20.604	c11.379,0,20.604-9.224,20.604-20.604V209.127C276.604,197.747,267.379,188.523,256,188.523z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                        </h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg modal Plus -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             <!--Contenu Modal Plus -->
@@ -350,7 +352,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- Modal -->
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -365,15 +367,17 @@
 
                                 
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">Marguerita</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">Marguerita
+                                            <svg class="svg" data-bs-toggle="modal" data-bs-target="#modalInfo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#54BBFF;" d="M256,0l-61.811,256L256,512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/><path style="fill:#8DD2FF;" d="M0,256c0,141.385,114.615,256,256,256V0C114.615,0,0,114.615,0,256z"/><path style="fill:#0789DE;" d="M256,30.905v450.189c124.316,0,225.095-100.778,225.095-225.095S380.316,30.905,256,30.905z"/><path style="fill:#2EA2EF;" d="M450.189,256c0-124.316-86.941-225.095-194.189-225.095C131.684,30.905,30.905,131.684,30.905,256	S131.684,481.095,256,481.095C363.248,481.095,450.189,380.316,450.189,256z"/><g><circle style="fill:#FFFFFF;" cx="256" cy="137.014" r="20.604"/><path style="fill:#FFFFFF;" d="M256,188.523c-11.379,0-20.604,9.224-20.604,20.604v165.859c0,11.379,9.224,20.604,20.604,20.604	c11.379,0,20.604-9.224,20.604-20.604V209.127C276.604,197.747,267.379,188.523,256,188.523z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                        </h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -387,15 +391,17 @@
                                 </div><!---- fin card pizza ---->
                                 
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">Reine</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">Reine
+                                            <svg class="svg" data-bs-toggle="modal" data-bs-target="#modalInfo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#54BBFF;" d="M256,0l-61.811,256L256,512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/><path style="fill:#8DD2FF;" d="M0,256c0,141.385,114.615,256,256,256V0C114.615,0,0,114.615,0,256z"/><path style="fill:#0789DE;" d="M256,30.905v450.189c124.316,0,225.095-100.778,225.095-225.095S380.316,30.905,256,30.905z"/><path style="fill:#2EA2EF;" d="M450.189,256c0-124.316-86.941-225.095-194.189-225.095C131.684,30.905,30.905,131.684,30.905,256	S131.684,481.095,256,481.095C363.248,481.095,450.189,380.316,450.189,256z"/><g><circle style="fill:#FFFFFF;" cx="256" cy="137.014" r="20.604"/><path style="fill:#FFFFFF;" d="M256,188.523c-11.379,0-20.604,9.224-20.604,20.604v165.859c0,11.379,9.224,20.604,20.604,20.604	c11.379,0,20.604-9.224,20.604-20.604V209.127C276.604,197.747,267.379,188.523,256,188.523z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                        </h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -408,15 +414,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">Végétarienne</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">Végétarienne</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -429,15 +435,17 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">PÊCHEUR</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">PÊCHEUR
+                                            <svg class="svg" data-bs-toggle="modal" data-bs-target="#modalInfo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#54BBFF;" d="M256,0l-61.811,256L256,512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/><path style="fill:#8DD2FF;" d="M0,256c0,141.385,114.615,256,256,256V0C114.615,0,0,114.615,0,256z"/><path style="fill:#0789DE;" d="M256,30.905v450.189c124.316,0,225.095-100.778,225.095-225.095S380.316,30.905,256,30.905z"/><path style="fill:#2EA2EF;" d="M450.189,256c0-124.316-86.941-225.095-194.189-225.095C131.684,30.905,30.905,131.684,30.905,256	S131.684,481.095,256,481.095C363.248,481.095,450.189,380.316,450.189,256z"/><g><circle style="fill:#FFFFFF;" cx="256" cy="137.014" r="20.604"/><path style="fill:#FFFFFF;" d="M256,188.523c-11.379,0-20.604,9.224-20.604,20.604v165.859c0,11.379,9.224,20.604,20.604,20.604	c11.379,0,20.604-9.224,20.604-20.604V209.127C276.604,197.747,267.379,188.523,256,188.523z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                        </h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -450,15 +458,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">4 SAISONS</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">4 SAISONS</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -471,15 +479,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">REGINA</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">REGINA</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -492,15 +500,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">ORIENTALE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">ORIENTALE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -513,15 +521,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">CALZONE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">CALZONE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -534,15 +542,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">MEXICAINE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">MEXICAINE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -555,15 +563,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">3 VIANDES</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">3 VIANDES</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -576,15 +584,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">FRUITS DE MER</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">FRUITS DE MER</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -597,15 +605,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">KEBAB</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">KEBAB</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -618,15 +626,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">SICILIENE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">SICILIENE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -639,15 +647,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">NORVEGIENNE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">NORVEGIENNE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -660,15 +668,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">CHÈVRE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">CHÈVRE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -681,15 +689,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">PAYSANNE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">PAYSANNE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -702,15 +710,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">BOURSIN</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">BOURSIN</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -723,15 +731,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">COUNTRY</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">COUNTRY</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -744,15 +752,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">CHICAGO</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">CHICAGO</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -765,15 +773,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">CHICKEN</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">CHICKEN</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -786,15 +794,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">INDIENNE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">INDIENNE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -807,15 +815,15 @@
                                     </div>
                                 </div><!---- fin card pizza ---->
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">TARTIFLETTE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">TARTIFLETTE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -830,14 +838,14 @@
 
                                 
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">PIMENTO</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">PIMENTO</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -852,14 +860,14 @@
 
                                 
                                 <!---- PIZZA ---->
-                                <div class="card-group col-6 col-sm-4 text-center shadow p-1">
+                                <div class="card-group col-6 col-lg-4 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/pizza3.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">BUFFALO</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">BUFFALO</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -875,19 +883,19 @@
                         </div><!---- (fin pizza) ---->
 
                         <!---- (burger) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-burger" role="tabpanel" aria-labelledby="v-pills-burger-tab">
+                        <div class="tab-pane fade" id="v-pills-burger" role="tabpanel" aria-labelledby="v-pills-burger-tab">
                                 <section class="row col-12">
                                     <!---- CHEESE BURGER ---->
                                     <div class="card-group col-6 text-center shadow p-1">
                                         <div class="card m-0">
                                             <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
                                             <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="52" height="52"><path d="M20.005,512c-5.097,0-10.116-1.948-13.925-5.641c-5.845-5.666-7.672-14.309-4.621-21.855l45.411-112.333  C16.162,332.253,0,285.425,0,236c0-63.375,26.855-122.857,75.62-167.489C123.891,24.331,187.952,0,256,0  s132.109,24.331,180.38,68.511C485.145,113.143,512,172.625,512,236c0,45.448-14.04,89.577-40.602,127.615  c-6.325,9.057-18.792,11.271-27.849,4.947s-11.271-18.792-4.947-27.849C460.452,309.425,472,273.215,472,236  c0-108.075-96.897-196-216-196S40,127.925,40,236c0,43.783,15.577,85.2,45.046,119.773c4.834,5.671,6.115,13.561,3.321,20.47  l-31.366,77.589l91.345-40.266c5.063-2.231,10.826-2.267,15.916-0.095C193.082,425.766,223.946,432,256,432  c36.892,0,73.299-8.587,105.286-24.832c9.85-5,21.887-1.072,26.889,8.775c5.001,9.849,1.073,21.887-8.775,26.889  C341.828,461.914,299.157,472,256,472c-34.48,0-67.835-6.191-99.276-18.413L28.068,510.301C25.474,511.444,22.728,512,20.005,512z   M276,325V217c0-11.046-8.954-20-20-20s-20,8.954-20,20v108c0,11.046,8.954,20,20,20S276,336.046,276,325z M256,128  c-11.046,0-20,8.954-20,20l0,0c0,11.046,8.954,20,20,20s20-8.954,20-20l0,0C276,136.954,267.046,128,256,128z"/></svg> -->
-                                            <h5 class="card-title m-1">CHEESE BURGER</h5>
-                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <h5 class="card-header">CHEESE BURGER</h5>
+                                            <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                                 <!-- svg modal Plus -->  
                                                 <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                                 
-                                                <p class="h5">10 €</p>
+                                                    <p class="h5 mb-0">10 €</p>
                                             </div><!--  -->
                                             
                                             <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -905,12 +913,12 @@
                                     <div class="card-group col-6 text-center shadow p-1">
                                         <div class="card m-0">
                                             <img src="RESOURCES pizzaDolce/img-burger/burger-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                            <h5 class="card-title m-1">DOUBLE CHEESE</h5>
-                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <h5 class="card-header">DOUBLE CHEESE</h5>
+                                            <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                                 <!-- svg Plus modal -->  
                                                 <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                                 
-                                            <p class="h5">10 €</p>
+                                                <p class="h5 mb-0">10 €</p>
                                             </div><!--  -->
                                             
                                             <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -927,12 +935,12 @@
                                     <div class="card-group col-6 text-center shadow p-1">
                                         <div class="card m-0">
                                             <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                            <h5 class="card-title m-1">LE 180</h5>
-                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <h5 class="card-header">LE 180</h5>
+                                            <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                                 <!-- svg Plus modal -->  
                                                 <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                                 
-                                            <p class="h5">10 €</p>
+                                                <p class="h5 mb-0">10 €</p>
                                             </div><!--  -->
                                             
                                             <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -949,12 +957,12 @@
                                     <div class="card-group col-6 text-center shadow p-1">
                                         <div class="card m-0">
                                             <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                            <h5 class="card-title m-1">LE 360</h5>
-                                            <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                            <h5 class="card-header">LE 360</h5>
+                                            <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                                 <!-- svg Plus modal -->  
                                                 <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                                 
-                                            <p class="h5">10 €</p>
+                                                <p class="h5 mb-0">10 €</p>
                                             </div><!--  -->
                                             
                                             <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -971,18 +979,18 @@
                         </div><!---- (Fin burger) ---->
                         
                         <!---- (tex-Mex) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-texMex" role="tabpanel" aria-labelledby="v-pills-texMex-tab">texMex
+                        <div class="tab-pane fade" id="v-pills-texMex" role="tabpanel" aria-labelledby="v-pills-texMex-tab">texMex
                             <section class="row col-12">
                                 <!----  ---->
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/steck-four-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">Heeu</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">Heeu</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1000,12 +1008,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/steck-four-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">Heeu</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">Heeu</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1022,18 +1030,18 @@
                         </div><!---- (Fin ) ---->
 
                         <!---- (Panini) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-panini" role="tabpanel" aria-labelledby="v-pills-panini-tab">
+                        <div class="tab-pane fade" id="v-pills-panini" role="tabpanel" aria-labelledby="v-pills-panini-tab">
                             <section class="row col-12">
                                 <!---- Chèvre ---->
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">CHÈVRE</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">CHÈVRE</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1050,12 +1058,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">JAMBON</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">JAMBON</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1072,12 +1080,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">SAUMON</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">SAUMON</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1094,12 +1102,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">FERMIER</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">FERMIER</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1117,12 +1125,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/burger2-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">3 FROMAGES</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">3 FROMAGES</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1139,19 +1147,19 @@
                         </div><!---- (Fin Panini) ---->
                         
                         <!---- (salade) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-salade" role="tabpanel" aria-labelledby="v-pills-salade-tab">
+                        <div class="tab-pane fade" id="v-pills-salade" role="tabpanel" aria-labelledby="v-pills-salade-tab">
                             <section class="row col-12">
 
                                 <!----  ---->
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/salade-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">LE 360</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">LE 360</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1169,12 +1177,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/salade-p.jpg" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">LE 360</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">LE 360</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1193,19 +1201,19 @@
                                 
                         
                         <!---- (dessert) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-dessert" role="tabpanel" aria-labelledby="v-pills-dessert-tab">dessert
+                        <div class="tab-pane fade" id="v-pills-dessert" role="tabpanel" aria-labelledby="v-pills-dessert-tab">dessert
                             <section class="row col-12">
 
                                 <!----  ---->
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">dessert</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">dessert</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1223,12 +1231,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">dessert</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">dessert</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1245,19 +1253,19 @@
                         </div><!---- (Fin dessert) ---->
                         
                         <!---- (boisson) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-boisson" role="tabpanel" aria-labelledby="v-pills-boisson-tab">boisson
+                        <div class="tab-pane fade" id="v-pills-boisson" role="tabpanel" aria-labelledby="v-pills-boisson-tab">boisson
                             <section class="row col-12">
                                 
                                 <!----  ---->
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">boisson</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">boisson</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1275,12 +1283,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">boisson</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">boisson</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1297,19 +1305,19 @@
                         </div><!---- (Fin boisson) ---->
                         
                         <!---- (glace) ---->
-                        <div class="tab-pane fade ps-4" id="v-pills-glace" role="tabpanel" aria-labelledby="v-pills-glace-tab">glace
+                        <div class="tab-pane fade" id="v-pills-glace" role="tabpanel" aria-labelledby="v-pills-glace-tab">glace
                             <section class="row col-12">
                                 
                                 <!----  ---->
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">glace</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">glace</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1327,12 +1335,12 @@
                                 <div class="card-group col-6 text-center shadow p-1">
                                     <div class="card m-0">
                                         <img src="RESOURCES pizzaDolce/img-burger/" class="card-img img-thumbnail p-0" alt="...">
-                                        <h5 class="card-title m-1">GLACES</h5>
-                                        <div class="card-body p-0 m-1 d-flex justify-content-between">
+                                        <h5 class="card-header">GLACES</h5>
+                                        <div class="card-body p-0 m-1 mt-3 d-flex justify-content-between align-items-end">
                                             <!-- svg Plus modal -->  
                                             <svg height="20pt" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#exampleModal"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0" fill="#2196f3"/><path d="m368 277.332031h-90.667969v90.667969c0 11.777344-9.554687 21.332031-21.332031 21.332031s-21.332031-9.554687-21.332031-21.332031v-90.667969h-90.667969c-11.777344 0-21.332031-9.554687-21.332031-21.332031s9.554687-21.332031 21.332031-21.332031h90.667969v-90.667969c0-11.777344 9.554687-21.332031 21.332031-21.332031s21.332031 9.554687 21.332031 21.332031v90.667969h90.667969c11.777344 0 21.332031 9.554687 21.332031 21.332031s-9.554687 21.332031-21.332031 21.332031zm0 0" fill="#fafafa"/></svg>
                                             
-                                        <p class="h5">10 €</p>
+                                            <p class="h5 mb-0">10 €</p>
                                         </div><!--  -->
                                         
                                         <div class="btn bg-primary  p-1 fs-6">Ajouter au panier
@@ -1468,7 +1476,34 @@
                 <!-- A propos -->
                     <div class="col-12 col-sm-4 text-center border border-dark">
                         <p class="h2 text-decoration-underline">A propos</p>
-  
+                        
+                        <!-- Button trigger modal -->
+                        <!-- svg Plus modal -->
+                        <svg class="svg" data-bs-toggle="modal" data-bs-target="#modalInfo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#54BBFF;" d="M256,0l-61.811,256L256,512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/><path style="fill:#8DD2FF;" d="M0,256c0,141.385,114.615,256,256,256V0C114.615,0,0,114.615,0,256z"/><path style="fill:#0789DE;" d="M256,30.905v450.189c124.316,0,225.095-100.778,225.095-225.095S380.316,30.905,256,30.905z"/><path style="fill:#2EA2EF;" d="M450.189,256c0-124.316-86.941-225.095-194.189-225.095C131.684,30.905,30.905,131.684,30.905,256	S131.684,481.095,256,481.095C363.248,481.095,450.189,380.316,450.189,256z"/><g><circle style="fill:#FFFFFF;" cx="256" cy="137.014" r="20.604"/><path style="fill:#FFFFFF;" d="M256,188.523c-11.379,0-20.604,9.224-20.604,20.604v165.859c0,11.379,9.224,20.604,20.604,20.604	c11.379,0,20.604-9.224,20.604-20.604V209.127C276.604,197.747,267.379,188.523,256,188.523z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-success">
+                                        <h5 class="modal-title" id="modalInfoLabel">REGINA</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-light">
+                                        <p>✔️ ŒUF</p>
+                                        <p>✔️ OLIVE</p>
+                                        <p>✔️ TOMATE</p>
+                                        <p>✔️ CHORIZO</p>
+                                        <p>✔️ MOZZARELLA</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Fin Modal -->
+
                     </div><!-- A propos -->
 
                 <!-- Contact -->
