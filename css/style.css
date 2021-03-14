@@ -7,9 +7,14 @@ body {
 }
 
 .test{
-  background: url("../RESOURCES pizzaDolce/pizza3.jpg") no-repeat center/cover;
+  background: url("../main/imgAcceuil/fem1.jpg") no-repeat center/cover;
 }
 
-.test h1{
+.test h1, .test1 h1{
   color: #fff;
+  font-family: Merienda one, sans-serif;
+}
+h1{
+  color: #fff;
+  font-family: Merienda one, sans-serif;
 }
